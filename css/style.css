@@ -1,0 +1,585 @@
+html {
+    height: 100%;
+}
+
+body { font-size: 12px;}
+
+@font-face {
+  font-family: 'Young';
+  src: url('assets/youngserif/youngserif-regular.eot'); /* IE9 Compat Modes */
+       url('assets/youngserif/youngserif-regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('assets/youngserif/youngserif-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('assets/youngserif/youngserif-regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+h1 h2 h3 h4 {
+    font-family: 'Young', serif;
+}
+
+a {
+    color: #337ab7!important;
+    text-decoration: none!important;
+}
+
+a:hover {
+    color: #70A7D7!important;
+    text-decoration: none!important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(235,133,87);
+    font-family: "Young", serif;
+}
+
+
+
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.left-side {
+    height: 100%;
+    width:50%;
+}
+
+.hero-left {
+    border-top: 15px solid #ccc;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    left:3%;
+    top:4.7%;
+    height:90%;
+    width:45%;
+    display: block;
+    background: rgb(51,51,51);
+    position: absolute;
+    overflow-y: auto;
+    /* shadows 
+    -webkit-box-shadow: 10px 11px 29px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 11px 29px -1px rgba(0,0,0,0.75);
+    box-shadow: 10px 11px 29px -1px rgba(0,0,0,0.75);
+    */
+}
+
+right-side {
+    height: 100%;
+    width: 50%;
+}
+
+.hero-right {
+    border-top: 15px solid #ccc;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    right: 3%;
+    top: 4.7%;
+    height: 60%;
+    width:45%;
+    display: block;
+    background:black;
+    position:absolute;
+    color: white;
+    overflow-y: auto;
+    /*  shadows 
+    -webkit-box-shadow: 10px 11px 29px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 11px 29px -1px rgba(0,0,0,0.75);
+  box-shadow: 10px 11px 29px -1px rgba(0,0,0,0.75);
+  */
+}
+
+@media screen and (max-width: 975px) {
+    .left-side {
+       position: relative;
+        height: 25rem;
+        width: 47rem;
+        display: inline-block;
+    }
+    
+    .hero-left {
+    border-top: 15px solid #ccc;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    left:3%;
+    top:4.7%;
+    height:90%;
+    width:100%;
+    display: block;
+    background: rgb(51,51,51);
+    position: absolute;
+    overflow-y: auto;
+    /* shadows 
+    -webkit-box-shadow: 10px 11px 29px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 11px 29px -1px rgba(0,0,0,0.75);
+    box-shadow: 10px 11px 29px -1px rgba(0,0,0,0.75);
+    */
+}
+    .right-side {
+        position: relative;
+        height: 24rem;
+        width: 47rem;
+        display: inline-block;
+    }
+    
+    .hero-right {
+    border-top: 15px solid #ccc;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    left:3%;
+    top:4.7%;
+    height:90%;
+    width:100%;
+    display: block;
+    background: rgb(51,51,51);
+    position: absolute;
+    overflow-y: auto;
+
+}
+    
+    #terminal {
+    left:3%;
+    height:22em;
+    width:45em;
+    z-index:5;
+    background: black;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+     border-top: 15px solid #ccc;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+
+}
+
+@media screen and (max-width) {
+    
+    
+}
+
+/* **************************
+HIDEN DIVS
+**************************  */
+#kdTrees {
+    display: none;
+}
+
+#seamCarver {
+    display: none;
+}
+
+#binarySearchDeluxe {
+    display: none;
+}
+
+#euclideanEdgeGraph {
+    display:none;
+}
+
+#euclideanEdgeGraphMST {
+    display:none;
+}
+
+#cursor {
+    color: rgb(127,206,235);
+    margin-left: 6px;
+    display:inline-block;
+    padding-bottom: 5px;
+}  
+
+#terminalCode {
+    padding-left: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+input {
+    margin-left: 10px;
+    display:inline-block;
+    background: black;
+    border: none;
+    width: 16em;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+    color: white;
+}
+
+#terminal {
+    height: 25%;
+    width: 45%;
+    z-index:5;
+    background: black;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+     border-top: 15px solid #ccc;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    position: absolute;
+    right: 3%;
+    bottom: 3.6%;
+    font-size: .9em;
+    font-family: monospace;
+}
+
+
+.reports {
+
+}
+
+#dynamic-runtime{
+    padding:0px 5px 0px 5px;
+    font-family: monospace;
+    font-size: 1.2em;
+    color: rgb(127,206,235);
+}
+
+
+/* *****************************
+Terminal Styling
+****************************** */
+.ui-menu.ui-widget.ui-widget-content.ui-autocomplete.ui-front {
+    font-family: monospace;
+    color: rgb(127,206,235);
+    background: black;
+    width: 20%;
+}
+
+
+/* ****************************
+index styling
+****************************** */
+
+
+#about {
+    background: #3498db;
+
+
+}
+
+#declaration {
+    margin-top: 20rem;
+    padding-left: 3%;
+    text-align: left;
+    color: rgb(255,255,255);
+}
+#declaration h1 {
+    font-family: 'Young', serif;
+    font-size: 10rem;
+    line-height: 1em;
+    font-weight: 800;
+}
+
+
+#code {
+/*  margin-top:150px;*/
+  border-radius: 5px;
+  width:70rem;
+  height: 80%;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding-top:15px;
+  padding-bottom: 2%;
+  margin-bottom: 3%;
+  background: #ccc;
+  font-family: monospace;
+  text-align: left;
+  font-size:1em;
+  color: #fafafa;
+  /* shadows
+  -webkit-box-shadow: 10px 11px 29px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 11px 29px -1px rgba(0,0,0,0.75);
+  box-shadow: 10px 11px 29px -1px rgba(0,0,0,0.75);
+  */
+}
+
+
+#console {
+  width:70rem;
+  padding: 40px;
+  height: 80%;
+  margin:0 auto;
+  background: #383737;
+}
+
+span.answer {
+  color:#ccc;
+}
+
+
+/* typing animations */
+.question {
+    position: relative;
+    left: 0;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    display:block;
+    width: 0;
+    font-weight: bold;
+}
+
+.answer {
+    visibility: hidden;
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 1s steps(120) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  to{width: 11em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+@media screen and (max-width: 1270px) {
+    
+    #code {
+        width: 60rem;
+    }
+    
+    #console {
+        width: 60rem;
+    }
+}
+
+@media screen and (max-width: 1085px) {
+    
+    #code {
+        width: 50rem;
+    }
+    
+    #console {
+        width: 50rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    
+    #code {
+        width: 70rem;
+    }
+    
+    #console {
+        width: 70rem;
+    }
+    
+    #declaration {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    
+    #declaration {
+        margin-top: 5rem;
+    }
+    
+    #declaration h1 {
+        font-size: 7rem;
+    }
+    
+    #code {
+        font-size: .8em;
+    }
+
+}
+
+@media screen and (max-width: 730px) {
+    
+    #code {
+        width: 65rem;
+    }
+    
+    #console {
+        width: 65rem;    
+    }
+    
+     #declaration h1 {
+        font-size: 6.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 670px) {
+    
+    #code {
+        width: 60rem;
+    }
+    
+    #console {
+        width: 60rem;    
+    }
+    
+     #declaration h1 {
+        font-size: 6.2rem;
+    }
+    
+}
+
+@media screen and (max-width: 630px) {
+    
+    #code {
+        width: 50rem;
+    }
+    
+    #console {
+        width: 50rem;    
+    }
+    
+     #declaration h1 {
+        font-size: 5.8rem;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    
+    #code {
+        width: 34em;
+    }
+    
+    #console {
+        width: 34em;    
+    }
+    
+     #declaration h1 {
+        font-size: 5.0rem;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    
+    #declaration {
+        margin-top: 2rem;
+    }
+    
+    #code {
+        width: 26em;
+    }
+    
+    #console {
+        width: 26em;    
+    }
+    
+     #declaration h1 {
+        font-size: 3.0rem;
+    }
+    
+}
+
+
+/* ****************************
+websamples styling
+****************************** */
+#sites-info {
+  height: 100%;
+  margin-top: 5%;
+}
+
+#web-intro {
+    background: rgb(76,83,100);
+    text-align: center;
+    font-size: 4em;
+    color: white;
+    font-family: 'Young', serif;
+    font-weight: 800;
+    padding: 6% 8% 6% 2%;
+}
+
+
+#projects {
+    background-color: rgb(76,83,100);
+    text-align: center;
+}
+
+.row {
+  clear: both;
+}
+
+.portfolio-thumb {
+  width: 45%;
+  margin: 20px 20px 20px 20px;
+  background-color: white;
+  display: inline-block;
+  /*//height: 500px;*/
+  border-radius: 10px;
+  text-align: center;
+}
+
+.portfolio-thumb img {
+  width: 100%;
+
+}
+
+.portfolio-thumb p {
+  font-size: 14px;
+  padding: 0px 25px 25px 25px;
+  text-align: center;
+  line-height: 24px;
+}
+
+
+#work{
+  background: rgb(76,83,100);
+  height: auto;
+  margin-top: -30px;
+  text-align: center;
+  padding: 60px 0 60px 0;
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 956px) {
+    
+    .portfolio-thumb {
+        width: 75%;
+        margin: 20px 30px 20px 30px;
+    }
+    
+    #web-intro {
+        font-size: 2em;
+    }
+}
+
+.modal {
+    text-align: left
+}
+
+
+.modal.fade.custom .modal-dialog  {
+    width: 90%;
+    font-family: 'Young';
+    color: rgb(47,54,61);
+}
+
+
+.modal-content {
+   background-color: rgb(245,241,238)!important;
+}
+
+
+.modal.fade.custom .modal-dialog p {
+     font-size: .7em;
+}
+
+.vid {
+    padding: 2% 2% 0% 1.2%;
+}
