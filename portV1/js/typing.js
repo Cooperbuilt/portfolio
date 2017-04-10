@@ -1,8 +1,9 @@
 /* global $ */
 $(document).ready(function() {
     if ( document.referrer == null || document.referrer.indexOf(window.location.hostname) < 0 ) {
+// Your code here
+
     //first elements
-    
     $(".1").css('border-right','2px solid white');
     $(".1").addClass("anim-typewriter");
     //time the dropping of the answer
@@ -87,14 +88,6 @@ $(document).ready(function() {
         $(".answer").css("visibility","visible");
     }
 });
-
-$("#console").click(function () {
-      $(".question").css('width','11em');
-      $(".answer").css("visibility","visible");
-      $(this).css('cursor','default');
-      $(".question").css('border-right', '0px solid transparent');
-    });
-
 
  /*   
     $(i+'a').css('visibility','visible');

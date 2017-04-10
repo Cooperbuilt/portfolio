@@ -1,29 +1,9 @@
 /* global $ */
-var heroRightHeight = $('#dynamic-runtime').innerHeight();
-var heroLeftHeight = $('.hero-left').innerHeight();
-var newRightHeight;
-var newLeftHeight; 
-/*
-* heightCheck tracks the inner height of the hero left and right sections 
-* after information is dynamically added, we check the height of the sections again
-* if the new height is more, we add an icon to show the user to scroll down
-*/
-var heightCheck = function() {
-  newRightHeight =  $('.hero-right')[0].scrollHeight;
-  newLeftHeight =  $('.hero-left')[0].scrollHeight;
-  //check for the right side 
-  if (newRightHeight > heroRightHeight || newLeftHeight > heroLeftHeight) {
-     $( "#dialog" ).dialog();
-     $('#dialog-html').html("Overflow Detected, remember to scroll down in each section!");
-  }
-}
-
 var main = function() {
 	//when enter is pressed, kick off the function
  	$(document).keypress(function(e) {
     		if(e.which == 13) {
-    		    
-            //store the value in the terminal input
+                //store the value in the terminal input
         		var longValue = $('#code-input').val();
         		if (longValue === "go to home" || longValue === "go to Home") {
         		  window.location.href = "index.html";
@@ -40,14 +20,19 @@ var main = function() {
         		$('#dynamic-runtime').load("content.html ."+value);
         		//clear the terminal
         		$("#code-input").val("");
-        	  heightCheck();
+        	  
 			}
 		});
 };
 
 $(document).ready(main);
 //make the terminal draggable and resizeable
-
+$(document).ready(function() {
+	$('#terminal').draggable({
+    containment: "#parent",
+    scroll: false
+});
+});
 
   $( function() {
     var availableTags = [
@@ -61,8 +46,3 @@ $(document).ready(main);
       source: availableTags
     });
   } );
-  
-  
-  
-
-

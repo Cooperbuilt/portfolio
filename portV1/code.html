@@ -1,65 +1,43 @@
 <!DOCTYPE html>
+<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
 <html lang="en-us">
 	<head>
-	    <meta charset="utf-8">
-	    <title>BuiltByCooper - Code Samples</title>
-	    <link rel="stylesheet" href="css/style.css" type="text/css" />
-	    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-	    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-	    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=java&amp;skin=desert"></script>
-	    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsAAAAAAAAARwAAADkAAAAAAAAAAAAAAAAAAAALAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwAAAHYAAAC9AAAAAAAAAGMAAAC8AAAAAAAAAAAAAAAAAAAAvgAAAHkAAAAIAAAAAAAAAAAAAAABAAAATQAAANoAAAD+AAAAmAAAAAAAAAAVAAAA9gAAABUAAAAAAAAAAAAAAJEAAAD9AAAA3gAAAFQAAAABAAAArAAAAP8AAADJAAAARAAAAAAAAAAAAAAAAAAAALsAAABlAAAAAAAAAAAAAAAAAAAAMgAAALQAAAD/AAAAuAAAALgAAAD/AAAAtAAAADIAAAAAAAAAAAAAAAAAAABoAAAAuQAAAAAAAAAAAAAAAAAAAEQAAADJAAAA/wAAAKwAAAABAAAAVAAAAN4AAAD9AAAAkQAAAAAAAAAAAAAAFwAAAPYAAAAUAAAAAAAAAJkAAAD+AAAA2gAAAE0AAAABAAAAAAAAAAAAAAAIAAAAeQAAAL4AAAAAAAAAAAAAAAAAAADAAAAAYgAAAAAAAAC9AAAAdgAAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALAAAAAAAAAAAAAAAAAAAAOwAAAEcAAAAAAAAACwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA//8AAPTvAADE4wAABGAAAARgAAAGIAAABiAAAMcjAAD3LwAA//8AAP//AAD//wAA//8AAA==" rel="icon" type="image/x-icon">
-	    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-92893041-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+	<meta charset="utf-8">
+	<title>Hello...</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=java&amp;skin=desert"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 	</head>
 	
 	<body>
-	   
 		<div class="container-fluid"><!-- begin Container -->
-		
-            <div class="right-side"> <!-- begin right side container -->
-            
-			    <div class="hero-right"><!-- begin hero right -->
-				    <div id="dynamic-runtime"><!-- begin dynamic runtime environment -->
-				        <h1>Start Here!</h1>
-				        <p>
-				         Welcome to your interactive code viewer. Access code snippets via the terminal below by clicking next to the carat below "java links".
-				         Type "run" and a list of commands will appear. Press enter (or click) to select a command, then again to run it. </br></br> Code snippets are displayed in the other terminal and code notes will appear right here.
+<div class="right-side">	
+			<div class="hero-right"><!-- begin hero right -->
+				<div id="dynamic-runtime">
+				    <p>
+				        Welcome to your interactive code viewer. Access code snippets via the terminal below. It is draggable for your convenience.
+				         Type "run" and a list of commands will appear. Press enter (or click) to select a command, then again to run it. </br></br> Code snippets are displayed on the left, readme text on the right.
 				         All code comes from work done at UMass Boston (under Professor Iyer), and utilizes the great work and libraries of the Princeton University CS department. 
-				        </p>
-				    </div><!-- end dynamic runtime environment -->
-			    </div><!--end hero right -->
-			     
-				<div id="terminal"> <!-- here is the "terminal" -->
-			        <p id="cursor">> java links</p><br/>
-		    	<span id="cursor">&nbsp;&nbsp;=&gt; ["<a  href="index.html">home</a>",
-		    		"<a href="websamples.html">web samples</a>", <a  href="http://www.blog.builtbycooper.com">problem solving blog</a>"]<br/></span></br>
-					<p id="cursor">><input type="textarea" id="code-input" value=""></p>
-					
-				</div><!-- end the Terminal -->
+				    </p>
+				</div><!-- this is the dynamic running block -->
 				
-		    </div><!-- end right side -->
+			</div><!--end hero right -->
+				<div id="terminal"> <!-- here is the "terminal" -->
+					   	<p id="cursor">> java links</p><br/>
+							<span id="cursor">&nbsp;&nbsp;=&gt; ["<a  href="index.html">home</a>",
+								 "<a href="websamples.html">web samples</a>"]<br/></span></br>
+						<p id="cursor">><input type="textarea" id="code-input" value=""></p>
+					</div><!-- end the Terminal -->
+		  </div>
 		  
-		    <div class="left-side"><!-- begin left side container-->
-		        
-			    <div class="hero-left"><!-- begin hero left -->
-			
-				    <div class="code-block"><!-- begin code block div -->
-				    
-					    <code id="dynamic-code"> <!-- this is the dynamic code block-->
+		 <div class="left-side">
+			<div class="hero-left"><!-- begin hero left -->
+				<div class="code-block"><!-- begin code block div -->
+					<code id="dynamic-code"> <!-- this is the dynamic code block-->
+					
 <!--
-CAUTION: If you are looking at this section, don't judge me. Code gets ugly from here on out because <pre> blocks display in relation to their whitespace
-in html. To get left aligned text, I had to slam the html up against the left side and it looks terrible. These don't display on the site unless they are 
-called via the terminal. This ends my caution.
+These are the hidden div blocks of code that are slid up on call from the terminal.
+They are left aligned because they are all governed by the <pre> block.
 -->
 <pre class="prettyprint" id="kdTrees">
 import edu.princeton.cs.algs4.MaxPQ;
@@ -658,7 +636,7 @@ public class SeamCarver {
         }
         return x;
     }
-    /* TRANSPOSE METHOD WAS PROVIDED, I DID NOT WRITE IT! */
+
     // Return a new picture that is a transpose of the given picture.
     private static Picture transpose(Picture picture) {
         Picture transpose = new Picture(picture.height(), picture.width());
@@ -930,23 +908,20 @@ public class EuclideanKruskalMST {
         return weight;
     }
 </pre>
-<!-- This ends the pre block madness. -->
+    
 
 	   
-			    	</div><!-- end code block div -->
-		    	</div><!--end hero left-->
-	    	</div><!-- end left side -->
+				</div><!-- end code block div -->
+			</div><!--end hero left-->
+		</div><!-- end left side -->
 		
 	    </div><!--end container -->	
-	    
-	<div id="dialog" title="Overflow!">
-        <p id="dialog-html"></p>
-    </div>
-
 	</body>
-	
-	<!-- All my scripts yo -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-ui.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script src="js/app.js"></script>
+
+
+	
+	
 </html>
