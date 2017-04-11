@@ -1,8 +1,8 @@
-html {
-    height: 100%;
-}
 
-body { font-size: 12px;}
+
+body { font-size: 12px;
+     height: 100%;
+}
 
 
 h1 h2 h3 h4 {
@@ -258,22 +258,30 @@ Terminal Styling
 /* ****************************
 index styling
 ****************************** */
-
-
-#about {
-    background: #3498db;
-
+#indexPage {
+ background-color: #3498db;
 }
 
+
+.flexcon {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 100vh;
+  background: #3498db;
+}
+
+
 #declaration {
-    margin-top: 20rem;
-    padding-left: 3%;
     text-align: left;
     color: rgb(255,255,255);
+    align-self: center;
+    flex-grow: 1;
+    margin: 4%;
 }
 #declaration h1 {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 9.5rem;
+    font-size: 6rem;
     line-height: 1em;
     font-weight: 800;
 }
@@ -281,19 +289,18 @@ index styling
 
 #code {
 /*  margin-top:150px;*/
+  align-self: center;
+  margin: 4%;
   border-radius: 5px;
-  width:60rem;
-  height: 90%;
-  margin: 0 auto;
-  margin-right: 3%;
-  margin-top: 5%;
+  width:40rem;
+  height: 80%;
+  flex-grow: 2;
   padding-top:15px;
   padding-bottom: 2%;
-  margin-bottom: 3%;
   background: #ccc;
   font-family: monospace;
   text-align: left;
-  font-size:1em;
+  font-size:1.4em;
   color: #fafafa;
   /* shadows
   -webkit-box-shadow: 10px 11px 29px -1px rgba(0,0,0,0.75);
@@ -304,10 +311,9 @@ index styling
 
 
 #console {
-  width:60rem;
-  padding: 10px 40px 10px 20px;
-  height: 65rem;
-  margin:0 auto;
+  width:35rem;
+  padding: 10px 40px 5px 20px;
+  height: 100%;
   background: #383737;
   cursor: pointer;
   font-family: 'Inconsolata', monospace;
@@ -354,80 +360,65 @@ span.answer {
 @media screen and (max-width: 1270px) {
 
     #code {
-        width: 60rem;
-        margin: 0 auto;
+        width: 35rem;
+        font-size: 1.29em;
     }
 
     #console {
-        width: 60rem;
+        width: 30rem;
+    }
+
+    #declaration h1 {
+      font-size: 6em;
+      align-self: center;
     }
 }
 
 @media screen and (max-width: 1085px) {
 
+    .flexcon {
+     flex-direction: column;
+    }
+
+    #declaration {
+      align-self: center;
+    }
+
     #code {
-        width: 50rem;
-        font-size: .975em;
-        margin: 0 auto;
+        width: 45rem;
+        font-size: 1.25em;
+        margin: 0;
+        font-size: 1.2em;
+
     }
 
     #console {
-        width: 50rem;
-    }
-
-    #declaration {
-        margin-top: 14rem;
+        width: 41.25rem;
     }
 
 }
 
-@media screen and (max-width: 991px) {
 
-    #code {
-        width: 70rem;
-        margin: 0 auto;
-    }
 
-    #console {
-        width: 70rem;
-    }
-
-    #declaration {
-        margin-top: 2rem;
-        padding-left: 4rem;
-    }
-}
-
-@media screen and (max-width: 770px) {
-
-    #declaration {
-        margin-top: 5rem;
-    }
-
-    #declaration h1 {
-        font-size: 7rem;
-    }
-
-    #code {
-        font-size: .8em;
-        margin: 0 auto;
-    }
-
-}
 
 @media screen and (max-width: 730px) {
 
+
     #code {
-        width: 65rem;
+        width: 38rem;
         margin: 0 auto;
+        height: 58%;
+
+
     }
 
     #console {
-        width: 65rem;
+        width: 34.35rem;
+
     }
 
      #declaration h1 {
-        font-size: 6.5rem;
+        font-size: 4rem;
     }
 
 }
@@ -435,38 +426,23 @@ span.answer {
 @media screen and (max-width: 670px) {
 
     #code {
-        width: 60rem;
+        width: 35rem;
         margin: 0 auto;
     }
 
     #console {
-        width: 60rem;
+        width: 31.31rem;
     }
 
      #declaration h1 {
-        font-size: 6.2rem;
+        font-size: 3.5rem;
     }
 
 }
 
-@media screen and (max-width: 630px) {
 
-    #code {
-        width: 50rem;
-        margin: 0 auto;
-    }
 
-    #console {
-        width: 50rem;
-    }
-
-     #declaration h1 {
-        font-size: 5.8rem;
-    }
-
-}
-
-@media screen and (max-width: 545px) {
+@media screen and (max-width: 590px) {
 
     #code {
         width: 34em;
@@ -474,16 +450,16 @@ span.answer {
     }
 
     #console {
-        width: 34em;
+        width: 29.9em;
     }
 
      #declaration h1 {
-        font-size: 5.0rem;
+        font-size: 3.0rem;
     }
 
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 520px) {
 
     #declaration {
         margin-top: 2rem;
@@ -492,12 +468,15 @@ span.answer {
     }
 
     #code {
-        width: 26em;
+        width: 27em;
+        height: 70%;
         margin: 0 auto;
+        font-size: 1.13em;
     }
 
     #console {
-        width: 26em;
+        width: 22.59em;
+        height: 100%;
     }
 
      #declaration h1 {
